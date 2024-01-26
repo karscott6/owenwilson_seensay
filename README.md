@@ -1,12 +1,19 @@
-# "The Best of Owen Wilson" See N Say
-## A Contribution to [The Useless Web](https://theuselessweb.com "The Useless Web")
+"The Best of Owen Wilson" See N Say
+A Contribution to The Useless Web - https://theuselessweb.com
 
-### Links
-**Domain:** https://karscottcodes.com/owenwilson_seensay/  
-**GitHub:** https://github.com/karscottcodes/owenwilson_seensay/  
+Links
+Domain: https://karscottcodes.com/owenwilson_seensay/  
+GitHub: https://github.com/karscottcodes/owenwilson_seensay/  
 
-### Project Description
-- A descrption of the project.
+Project Description
+The classic children's toy gets a useless upgrade! Typically scattered with animal noises, this Useless Website contribution randomly plays some of Owen Wilson's most iconic lines from his catalogue of blockbuster movies using a random spin function.
 
-### Technology Stack
-- A list of the technologies the project uses (HTML, JavaScript, React, etc...).
+Technology Stack
+HTML
+JavaScript
+CSS
+Additional use of Inkscape, GIMP, OpenShot Video Editor and Audacity (Audio)
+
+Mockup
+A - Mockup
+B - Wireframe

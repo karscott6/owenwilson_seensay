@@ -1,0 +1,27 @@
+body {
+  font-family: "Arial", sans-serif;
+}
+
+#stage {
+  padding: 20px;
+  background-color: #f0f0f0;
+}
+#stage #arrow-container {
+  margin-bottom: 10px;
+}
+#stage #arrow {
+  width: 50px;
+  height: auto;
+  transition: transform 3s cubic-bezier(0.68, -0.55, 0.27, 1.55);
+}
+
+#stage .goButton {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+/*# sourceMappingURL=styles.css.map */

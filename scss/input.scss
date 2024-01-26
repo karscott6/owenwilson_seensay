@@ -1,0 +1,37 @@
+// Define variables
+$primary-color: #007bff;
+$font-family: 'Arial', sans-serif;
+
+// Basic styling
+body {
+    font-family: $font-family;
+}
+
+#stage {
+    padding: 20px;
+    background-color: #f0f0f0;
+
+    #arrow-container {
+        margin-bottom: 10px;
+    }
+
+    #arrow {
+        width: 50px;
+        height: auto;
+        transition: transform 3s cubic-bezier(0.68, -0.55, 0.27, 1.55);
+    }
+
+    // Mixin for button styling
+    @mixin button-styles {
+        padding: 10px 20px;
+        background-color: $primary-color;
+        color: #fff;
+        border: none;
+        cursor: pointer;
+    }
+
+    .goButton {
+        @include button-styles;
+        font-size: 16px;
+    }
+}
