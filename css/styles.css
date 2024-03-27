@@ -3,25 +3,43 @@ body {
 }
 
 #stage {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   padding: 20px;
-  background-color: #f0f0f0;
+  height: 100vh;
+  border: 2px solid blue;
+  background: url("../img/owen_circle.png") no-repeat center center;
+  background-size: contain;
+  position: relative;
 }
-#stage #arrow-container {
+#stage #lightning-container {
   margin-bottom: 10px;
-}
-#stage #arrow {
-  width: 50px;
-  height: auto;
+  border: 2px solid red;
+  position: absolute;
+  text-align: center;
+  left: 45%;
+  font-size: 18px;
   transition: transform 3s cubic-bezier(0.68, -0.55, 0.27, 1.55);
+  transform-origin: bottom left;
+}
+#stage #lightning {
+  width: 200px;
+  height: auto;
 }
 
-#stage .goButton {
+.goButton {
   padding: 10px 20px;
   background-color: #007bff;
   color: #fff;
   border: none;
   cursor: pointer;
   font-size: 16px;
+}
+
+.owen_circle {
+  width: 200px;
 }
 
 /*# sourceMappingURL=styles.css.map */
