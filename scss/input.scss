@@ -1,14 +1,13 @@
-// Define variables
 $primary-color: #007bff;
 $font-family: "Arial", sans-serif;
 
-// Basic styling
 body {
   font-family: $font-family;
 }
 
 #stage {
   display: flex;
+  border: 2px solid blue;
   flex-direction: column;
   align-items: center;
   justify-content: center;
@@ -25,18 +24,13 @@ body {
     text-align: center;
     left: 50%;
     top: 50%;
-    transform-origin: center bottom;
+    transform-origin: center left;
     font-size: 18px;
     transition: transform 3s cubic-bezier(0.68, -0.55, 0.27, 1.55);
+
+    #lightning {
+      width: 200px;
+      height: auto;
+    }
   }
-
-  #lightning {
-    width: 200px;
-    height: auto;
-  }
-
-}
-
-.owen_circle {
-  width: 200px;
 }
