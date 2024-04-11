@@ -1,4 +1,5 @@
 document.addEventListener("DOMContentLoaded", function () {
+    // Grab Elements
     const goButton = document.querySelector("#goButton");
     const lightning = document.querySelector("#lightning-container");
     const audioElements = {
@@ -12,13 +13,16 @@ document.addEventListener("DOMContentLoaded", function () {
         zoolander: document.getElementById("wowZoolander"),
     };
 
-    let lightningSpin = 0; // Define lightningSpin outside the function
+    // Define lightningSpin for accessibility
+    let lightningSpin = 3600;
 
     function rotateLightning() {
-        const randomRotation = Math.floor(Math.random() * 360);
-        const totalRotation = randomRotation + lightningSpin; // Use updated lightningSpin
+        const randomRotation = Math.floor(Math.random() * 360); // Find Random 1-360
+        const totalRotation = randomRotation + lightningSpin; // Use lightningSpin for additional rotations
+
         lightning.style.transform = "rotate(" + totalRotation + "deg)";
 
+        // When transform is complete, play audio
         lightning.addEventListener(
             "transitionend",
             function endAnimation() {
@@ -29,6 +33,7 @@ document.addEventListener("DOMContentLoaded", function () {
         );
     }
 
+    // Play Audio Based on 1-360 rotation result
     function playAudio(randomRotation) {
         for (const [movie, audio] of Object.entries(audioElements)) {
             const angleRange = getAngleRange(movie);
@@ -42,6 +47,7 @@ document.addEventListener("DOMContentLoaded", function () {
         }
     }
 
+    // Range for Each Effect
     function getAngleRange(movie) {
         const ranges = {
             starskyHutch: { min: 0, max: 45 },
@@ -58,6 +64,6 @@ document.addEventListener("DOMContentLoaded", function () {
 
     goButton.addEventListener("click", function () {
         rotateLightning();
-        lightningSpin += 3600; // Increment lightningSpin every time the button is clicked
+        lightningSpin += 3600; // use lightningSpin every time the button is clicked
     });
 });
